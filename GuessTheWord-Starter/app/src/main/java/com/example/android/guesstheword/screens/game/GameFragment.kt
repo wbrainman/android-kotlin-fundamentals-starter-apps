@@ -50,6 +50,7 @@ class GameFragment : Fragment() {
         )
         Timber.i("call ViewModelProvider")
         viewModel = ViewModelProvider(this).get(GameViewModel::class.java)
+        binding.gameViewModel = viewModel
 
         binding.correctButton.setOnClickListener { onCorrect() }
         binding.skipButton.setOnClickListener { onSkip() }
