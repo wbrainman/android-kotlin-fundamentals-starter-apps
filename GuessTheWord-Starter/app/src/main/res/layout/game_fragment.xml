@@ -63,6 +63,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/word_is_text"
             app:layout_constraintVertical_chainStyle="packed"
+            android:text="@{@string/quote_format(gameViewModel.word)}"
             tools:text="&quot;Tuna&quot;" />
 
         <TextView
